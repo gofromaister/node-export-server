@@ -450,10 +450,10 @@ if (process.env.ACCEPT_HIGHCHARTS_LICENSE) {
 
     embedAll(
       useIfDefined(process.env.HIGHCHARTS_VERSION, 'latest'),
-      useIfDefined(process.env.HIGHCHARTS_USE_STYLED, true),
-      useIfDefined(process.env.HIGHCHARTS_USE_MAPS, true),
+      useIfDefined(process.env.HIGHCHARTS_USE_STYLED, false),
+      useIfDefined(process.env.HIGHCHARTS_USE_MAPS, false),
       useIfDefined(process.env.HIGHCHARTS_MOMENT, false),
-      useIfDefined(process.env.HIGHCHARTS_USE_GANTT, true),
+      useIfDefined(process.env.HIGHCHARTS_USE_GANTT, false),
       getOptionals(cdnScriptsOptional, true)
     );
 } else {
