@@ -454,7 +454,7 @@ if (process.env.ACCEPT_HIGHCHARTS_LICENSE) {
       useIfDefined(process.env.HIGHCHARTS_USE_MAPS, false),
       useIfDefined(process.env.HIGHCHARTS_MOMENT, false),
       useIfDefined(process.env.HIGHCHARTS_USE_GANTT, false),
-      getOptionals(cdnScriptsOptional, true)
+      getOptionals(cdnScriptsOptional, false)
     );
 } else {
     console.log(fs.readFileSync(__dirname + '/msg/licenseagree.msg').toString().bold);
